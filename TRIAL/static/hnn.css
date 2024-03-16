@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4397eb;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('fetus.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Deploy {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #e8d5d5;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ee1111;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputBox {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.inputBox span {
+    font-size: 17px;
+    color: #383636;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.inputBox input:focus {
+    border-color: #4CAF50;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d5278a;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/hnn.css">
+</head>
+<body>
+    <section class="Deploy">
+
+        <h1 class="heading">Enter the Data</h1>
+    
+        <form action="{{url_for('predict')}}" method="post">
+    
+        <div class="flex">
+    
+            <div class="inputBox">
+                <span>Baseline Value</span>
+                <input type="any" placeholder="Enter baseline value" name="baselinevalue" required>
+            </div>
+    
+            <div class="inputBox">
+                <span>Acceleration</span>
+                <input type="any" placeholder="Enter acceleration" name="acceleration" required>
+            </div>
+    
+
+
+            <div class="inputBox">
+                <span>Uterine Contractions</span>
+               <input type="any" placeholder="Enter Uterine Contractions" name="uc" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Light Decelerations</span>
+                <input type="any" placeholder="Enter Light Decelerations" name="ld" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Severe Decelerations</span>
+                <input type="any" placeholder="Enter Severe Decelerations" name="sd" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Prolongued Decelerations</span>
+                <input type="any" placeholder="Enter Prolongued Decelerations" name="pd" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Abnormal Short-term Variability</span>
+                <input type="any" placeholder="Enter Abnormal short-term Variability" name="stv" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Mean value of Short Term Variability</span>
+                <input type="any" placeholder="Enter Mean Value of Short-Term Variability" name="mean" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Percentage of time with Abnormal Long-term Variability</span>
+                <input type="any" placeholder="Enter Percentage of Time with Abnormal Long-term Variability" name="percentage" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Mean value of Long-term Variability</span>
+                <input type="any" placeholder="Enter Mean Value of Long-Term Variability" name="meanlt" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Histogram Width</span>
+                <input type="any" placeholder="Enter Histogram Width" name="hw" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Histogram Minimum</span>
+                <input type="any" placeholder="Enter Histogram Min" name="hmn" required>
+            </div>
+
+
+
+
+
+
+
+            <div class="inputBox">
+                <span>Histogram Mode</span>
+                <input type="any" placeholder="Enter Histogram Mode" name="hm" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Histogram Mean</span>
+                <input type="any" placeholder="Enter Histogram Mean" name="hmean" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Histogram Median</span>
+                <input type="any" placeholder="Enter Histogram Median" name="hmedian" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Histogram Variance</span>
+                <input type="any" placeholder="Enter Histogram Variance" name="hvar" required>
+            </div>
+
+            <div class="inputBox">
+                <span>Histogram Tendency</span>
+                <input type="any" placeholder="Enter Histogram Tendency" name="htend" required>
+            </div>    
+    
+        </div>
+    
+        <input type="submit" value="Send Message" name="send" class="btn">
+    
+        </form>
+    <br>
+    <br>
+    {{ prediction_text }}
+    </section>
+
+</body>
+</html>
